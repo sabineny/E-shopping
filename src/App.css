@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(201, 220, 244);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(33, 131, 120);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-box{
   display: flex;
-  flex-direction: column;
+  margin: auto;
+  width: 80%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+a {
+  padding: 30px;
+  color: aliceblue;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
+.shopping{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  color: aliceblue;
+}
+section{
+  
+  gap: 10px;
+  margin: 13px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  display: grid;
+  
+  
+}
+button{
+  width: 100px;
+  height: 30px;
+  color: aliceblue;
+  background-color: rgb(33, 131, 120);
+  border: none;
+
+}
+.title{
+  font-size: 20px;
+  font-weight: bold;
+}
+form{
+  /* display: grid; */
+  align-items: center;
+  width: 270px;
+  height: 50vh;
+  margin:auto
+  
+  
+}
+.add-form{
+  font-size: 50px;
+  border-radius: 14px;
+  background-color: #a5dadb;
+  /* margin: 90px; */
+  width: 400px;
+  min-height: 150px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 30px;
+  padding-left: 2px;
+  
+
+}
+form button{
+  margin-left: 80px;
+  border-radius: 10px;
+}
+input{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border:none;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
