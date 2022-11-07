@@ -38,6 +38,7 @@ section{
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: auto;
   display: grid;
+
   
   
 }
@@ -88,6 +89,7 @@ input{
   
 }
 
-.image-box{
-  width: 100px;
+.image-box img{
+  width: 400px;
+  height: 300px;
 }
