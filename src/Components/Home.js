@@ -7,20 +7,11 @@ import AddProduct from './AddProduct';
 import Cart from './Cart'
 
 
-function Home() {
+function Home(props) {
 
   const [show, setShow] = useState(true)
   const [carts, setCarts] = useState([])
-  const [data, setData] = useState([]);
-
-
-  const getproducts = async ()=>{
-  const response= await axios.get("https://dummyjson.com/products?limit=12");
-  setData(response.data.products);
-  }
-  if(data.length<1){
-  getproducts()};
-
+  
 
   return (
     <>
@@ -28,7 +19,7 @@ function Home() {
 
      <section>
       {
-       data.map((item,index) =>(
+       props.data.map((item,index) =>(
         <Cards products key={index} item={item}/>
        ))
        }

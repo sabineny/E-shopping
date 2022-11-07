@@ -53,7 +53,7 @@ button{
   font-size: 20px;
   font-weight: bold;
 }
-form{
+.formm{
   /* display: grid; */
   align-items: center;
   width: 270px;
@@ -76,8 +76,8 @@ form{
   
 
 }
-form button{
-  margin-left: 80px;
+.add-form button{
+  margin-left: 150px;
   border-radius: 10px;
 }
 input{
@@ -88,3 +88,6 @@ input{
   
 }
 
+.image-box{
+  width: 100px;
+}
